@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Premium Blog App V2</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📝 Premium Blog App</h1>
+
+        <p class="subtitle">
+            Create, manage and publish your blog posts
+        </p>
+
+        <!-- Blog Form -->
+
+        <div class="blog-form">
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Enter Blog Title"
+            >
+
+            <select id="category">
+
+                <option value="Technology">
+                    Technology
+                </option>
+
+                <option value="Programming">
+                    Programming
+                </option>
+
+                <option value="AI & ML">
+                    AI & ML
+                </option>
+
+                <option value="Education">
+                    Education
+                </option>
+
+                <option value="Personal">
+                    Personal
+                </option>
+
+            </select>
+
+            <textarea
+                id="content"
+                placeholder="Write your blog here..."
+            ></textarea>
+
+            <div class="extra-info">
+
+                <p id="charCount">
+                    ✍️ 0 Characters
+                </p>
+
+            </div>
+
+            <button onclick="addBlog()">
+                🚀 Publish Blog
+            </button>
+
+        </div>
+
+        <!-- Search -->
+
+        <div class="search-section">
+
+            <input
+                type="text"
+                id="search"
+                placeholder="🔍 Search Blogs..."
+                onkeyup="searchBlogs()"
+            >
+
+        </div>
+
+        <!-- Blog Count -->
+
+        <div id="blogCount" class="blog-count">
+
+            📚 Total Blogs: 0
+
+        </div>
+
+        <!-- Blog Container -->
+
+        <div id="blogContainer">
+
+        </div>
+
+        <!-- Footer -->
+
+        <footer>
+
+            Built with ❤️ by
+            <span>Satya Ranjan</span>
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
